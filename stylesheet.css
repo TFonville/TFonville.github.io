@@ -26,6 +26,8 @@ color: rgb(255,10,10)
 
 .youtubefilmpje{
     margin: 10px;
+    width: 560px;
+    height: 315px;
 }
 
 #abonneerknop, #abonneerknop:hover {
@@ -97,5 +99,21 @@ color: rgb(255,10,10)
     }
     h3 {
         font-size: 15px;
+    }
+    .youtubefilmpje{
+        width: 90%;
+        height: 56vw;
+    }
+    .positielinksboven{ /* note to self: dit staat nu ONDERaan in de mobiele versie, beetje verwarrend maarja */
+        top: auto;
+        bottom: 20px;
+    }
+    #abonneerknop, #abonneerknop:hover {
+        top: auto;
+        bottom: 25px;
+    }
+    h1 {
+        font-size: 25px;
+        margin: 10px;
     }
 }
