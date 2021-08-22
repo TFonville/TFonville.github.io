@@ -74,3 +74,28 @@ color: rgb(255,10,10)
     width: calc(100vw - 400px);
     background-color: rgba(36, 35, 35, 0.8);
 }
+/* Use a media query to add a breakpoint at 800px: */
+@media screen and (max-width: 800px) {
+
+    #achtergrondvideo{
+        max-width:10000%;
+        min-height:100%;
+        left:-700px;
+    }
+    #pagecontent{
+        padding: 50px 25px;
+        margin-top: 100px;
+        width: 80vw;
+    }
+    h2 {
+        font-size: 30px;
+        margin: 5px;
+    }
+    .knop {
+        margin: 5px;
+        display:inline-block;
+    }
+    h3 {
+        font-size: 15px;
+    }
+}
