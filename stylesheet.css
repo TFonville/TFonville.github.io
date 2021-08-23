@@ -20,8 +20,8 @@ a  {
     text-decoration: none;
 }
 
-a:hover {
-color: rgb(255,10,10)
+a:hover, #abonneerknop:hover {
+color: rgba(255, 255, 255, 0.63) !important
 }
 
 .youtubefilmpje{
@@ -43,6 +43,7 @@ color: rgb(255,10,10)
     text-decoration: none;
     border-radius: 20px;
 }
+
 
 .knop{
     color: white    ;
@@ -71,10 +72,17 @@ color: rgb(255,10,10)
 
 #pagecontent{
     position: absolute;
-    padding: 100px 150px;
+    padding: 40px 150px;
     margin-top: 200px;
     width: calc(100vw - 400px);
     background-color: rgba(36, 35, 35, 0.8);
+    border-right:solid 4px rgb(216, 216, 2)
+}
+
+#Theo_foto {
+    height: 150px;
+    width: 150px;
+    border-radius: 100%;
 }
 /* Use a media query to add a breakpoint at 800px: */
 @media screen and (max-width: 800px) {
@@ -86,7 +94,7 @@ color: rgb(255,10,10)
     }
     #pagecontent{
         padding: 50px 25px;
-        margin-top: 150px;
+        margin-top: 120px;
         width: 80vw;
     }
     h2 {
@@ -94,7 +102,7 @@ color: rgb(255,10,10)
         margin: 5px;
     }
     .knop {
-        margin: 5px;
+        margin: 0px;
         display:inline-block;
     }
     h3 {
@@ -104,7 +112,7 @@ color: rgb(255,10,10)
         width: 90%;
         height: 56vw;
     }
-    .positielinksboven{ /* note to self: dit staat nu ONDERaan in de mobiele versie, beetje verwarrend maarja */
+    .positielinksboven{ /* note to self: deze knop staat nu ONDERaan in de mobiele versie, beetje verwarrend maarja */
         top: auto;
         bottom: 20px;
     }
@@ -115,5 +123,10 @@ color: rgb(255,10,10)
     h1 {
         font-size: 25px;
         margin: 10px;
+    }
+    #Theo_foto {
+        height: 100px;
+        width: 100px;
+        border-radius: 100%;
     }
 }
