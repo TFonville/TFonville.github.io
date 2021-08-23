@@ -95,7 +95,7 @@ color: rgba(255, 255, 255, 0.63) !important
 }
 
 #achtergrondvideo{
-    max-width:100%;
+    min-width:100%;
     min-height:100%;
     position: fixed;
     right: 0;
@@ -149,8 +149,8 @@ color: rgba(255, 255, 255, 0.63) !important
         left:-700px;
     }
     #pagecontent{
-        padding: 50px 25px;
-        margin-top: 120px;
+        padding: 20px 25px;
+        margin-top: 60px;
         width: 80vw;
     }
     h2 {
@@ -158,8 +158,9 @@ color: rgba(255, 255, 255, 0.63) !important
         margin: 5px;
     }
     .knop {
-        margin: 0px;
+        margin-top: 10px;
         display:inline-block;
+        font-size: 17px;
     }
     h3 {
         font-size: 15px;
@@ -184,5 +185,22 @@ color: rgba(255, 255, 255, 0.63) !important
         height: 100px;
         width: 100px;
         border-radius: 100%;
+    }
+    #CVcontent{
+        padding: 34px;
+        margin-bottom:100px;
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+        border-right:solid 4px rgb(216, 216, 2); 
+        color: black;
+    
+    }
+    .Jaartal-CV{
+        display:none;
+    }
+    .CV{
+        width: 100% !important;
     }
 }
