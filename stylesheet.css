@@ -13,8 +13,41 @@ html {
 h2 {
     color: rgb(255, 255, 255);
     font-size: 60px;
-    margin: 10px;
+    margin: 10px 0;
 }
+
+h4 {
+    font-size:40px;
+    margin: 5px 0;
+}
+
+h5 {
+    font-size: 25px;
+    margin:10px 0;
+}
+
+h6{
+    font-size: 20px;
+    margin: 0px 0;
+}
+
+.Jaartal-CV{
+    color: rgb(65, 65, 65);
+    font-size: 20px;
+    min-width: min(500px, 15vw);
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.streepje-in-rij{
+    background-color: rgb(65, 64, 64);
+    height: 1px;
+    margin: 15px 0px;
+    border: solid 20px white;
+    border-right:none;
+    border-left: none;
+}
+
 a  {
     color: rgb(200,250,250);
     text-decoration: none;
@@ -71,12 +104,22 @@ color: rgba(255, 255, 255, 0.63) !important
 }
 
 #pagecontent{
-    position: absolute;
     padding: 40px 150px;
-    margin-top: 200px;
+    margin-top: 150px;
     width: calc(100vw - 400px);
     background-color: rgba(36, 35, 35, 0.8);
     border-right:solid 4px rgb(216, 216, 2)
+}
+
+#CVcontent{
+    padding: 20px;
+    margin-bottom:100px;
+    margin-left: 100px;
+    width: calc(100vw - 340px);
+    background-color: rgb(255, 255, 255);
+    border-right:solid 4px rgb(216, 216, 2); 
+    color: black;
+
 }
 
 #Theo_foto {
@@ -84,6 +127,19 @@ color: rgba(255, 255, 255, 0.63) !important
     width: 150px;
     border-radius: 100%;
 }
+
+.CV{
+    width: calc(100vw - 500px) !important;
+}
+
+.CV-logo{
+    /* height: 80px; */
+    width: 80px;
+    border-radius: 3px;
+    margin-right: 15px;
+}
+
+
 /* Use a media query to add a breakpoint at 800px: */
 @media screen and (max-width: 800px) {
 
