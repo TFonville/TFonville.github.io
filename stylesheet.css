@@ -53,8 +53,12 @@ a  {
     text-decoration: none;
 }
 
-a:hover, #abonneerknop:hover {
-color: rgba(255, 255, 255, 0.63) !important
+a:hover {
+color: rgb(0, 11, 105) !important
+}
+
+#abonneerknop:hover{
+    color: rgba(255, 255, 255, 0.63) !important
 }
 
 .youtubefilmpje{
