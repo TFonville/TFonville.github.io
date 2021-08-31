@@ -16,41 +16,25 @@
             </h1>
 
             <script>
-                let list = document.getElementById("myList");
-                let data = ["hina1Pk3rMw","IUyOQAW9jKs","hcKNvIFnpls","t4S4MbP3H6w","VOIB9x9WNq0"];
-                data.forEach((item)=>{
-                    let li = document.createElement("li")
-                    li.innerText = item;
-                    list.appendChild(li);
-            })
+                window.onload = function filmpjes_laden() {
+                    let list = document.getElementById("videolist");
+                    let data = ["hina1Pk3rMw","IUyOQAW9jKs","hcKNvIFnpls","t4S4MbP3H6w","VOIB9x9WNq0"];
+                    data.forEach((item)=>{
+                        let iframe = document.createElement("iframe");
+                        iframe.setAttribute("class", "youtubefilmpje");
+                        iframe.setAttribute("src", "https://www.youtube.com/embed/"+item);
+                        iframe.setAttribute("frameborder", "0");
+                        iframe.setAttribute("allow", "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-pictures");
+                        iframe.setAttribute("allowfullscreen", "");
+                        list.appendChild(iframe);
+                    })
+                }
 
             </script>
 
-            <!-- <h2>
-                Heide in Wageningen Hoog
-            </h2> -->
-            
-            <iframe class='youtubefilmpje' src="https://www.youtube.com/embed/hina1Pk3rMw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-pictures" allowfullscreen></iframe>
-            
-            <!-- <h2>
-                Uiterwaarden in Wageningen
-            </h2> -->
-            <iframe class='youtubefilmpje' src="https://www.youtube.com/embed/IUyOQAW9jKs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div id="videolist">
 
-            <!-- <h2>
-                Soesterduinen
-            </h2> -->
-            <iframe class='youtubefilmpje' src="https://www.youtube.com/embed/hcKNvIFnpls" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-            <!-- <h2>
-                Frankrijk
-            </h2> -->
-            <iframe class='youtubefilmpje' src="https://www.youtube.com/embed/t4S4MbP3H6w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            
-            <!-- <h2>
-                Blauwe Kamer Rhenen
-            </h2> -->
-            <iframe class='youtubefilmpje' src="https://www.youtube.com/embed/VOIB9x9WNq0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
             
             <a id="abonneerknop" href="https://www.youtube.com/channel/UCP2bBCC1Ji4fxAd0ANxDZNQ?sub_confirmation=1" target="_blank">
                 Abonneren 
@@ -61,12 +45,6 @@
                 Home
             </a>
             
-            
-
-
-            <!--<h2 style="color: rgb(255, 222, 189);">
-                Heide in Wageningen Hoog
-            </h2> -->
         </center>
     </body>
 </html>
