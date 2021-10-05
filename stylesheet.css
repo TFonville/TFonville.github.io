@@ -34,7 +34,7 @@ h6{
 .Jaartal-CV{
     color: rgb(65, 65, 65);
     font-size: 20px;
-    min-width: min(500px, 15vw);
+        
     display: inline-block;
     margin-left: 10px;
 }
