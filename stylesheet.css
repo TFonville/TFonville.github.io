@@ -34,7 +34,7 @@ h6{
 .Jaartal-CV{
     color: rgb(65, 65, 65);
     font-size: 20px;
-        
+    min-width: min(500px, 15vw);
     display: inline-block;
     margin-left: 10px;
 }
@@ -143,6 +143,49 @@ color: rgb(155, 163, 228) !important
     margin-right: 15px;
 }
 
+#recepten_content{
+    padding: 20px 40px;
+    margin-top: 0px;
+    width: calc(85vw);
+    /* border-bottom: solid 1px rgba(0, 0, 0, 0.8); */
+    border-right:solid 4px rgb(50, 50, 51)
+}
+
+#recepten_tabel{
+    text-indent: -22px;
+     padding-left: 22px;
+}
+
+.recepten_foto{
+    /* height: 80px; */
+    width: 25vw;
+    border-radius: 0px;
+    padding-left: 15px;
+}
+
+/*bron: https://www.w3schools.com/howto/howto_js_collapsible.asp*/
+.collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+  
+  .active, .collapsible:hover {
+    background-color: #555;
+  }
+  
+  .content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+  }
 
 /* Use a media query to add a breakpoint at 800px: */
 @media screen and (max-width: 800px) {
