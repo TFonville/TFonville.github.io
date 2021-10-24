@@ -214,9 +214,11 @@ color: rgb(155, 163, 228) !important
 
 .recept_knoppen_divje{
     position:absolute;
-    bottom:2vh;
+    bottom:1vh;
     width: 100%;
     font-weight: bold;
+    padding: 0px 20%;
+    box-sizing: border-box;
 }
 
 .flexbox-recept {
@@ -237,7 +239,25 @@ color: rgb(155, 163, 228) !important
     color:rgb(218, 214, 2);
     font-size: 50px;
     margin: 0px;
-    margin-top: 20px;
+    margin-top: 0px;
+    animation:pijl_animatie 1.5s 3;
+    transform:translate(0, -15px)
+}
+
+.hide_on_big_screen {
+    display:none;
+}
+
+@keyframes pijl_animatie {
+    0% {
+        transform:translate(0, -15px)
+    }
+    70% {
+        transform:translate(0, 10px)
+    }
+    100% {
+        transform:translate(0, -15px)
+    }
 }
 
 /* Use a media query to add a breakpoint at 800px: */
@@ -313,7 +333,6 @@ color: rgb(155, 163, 228) !important
         margin-right: 0;
         width: 100%;
         color: black;
-        border-left:solid 4px rgb(50, 50, 51)
     }
 
     .Jaartal-CV{
@@ -326,6 +345,16 @@ color: rgb(155, 163, 228) !important
     .divje_titelbalk_recepten{
         left: 0%;
         right: 0%; 
+        top: 25vh;
+    }
+
+    .recept_knop{
+        font-size: 15px;
+        padding: 5px;
+    }
+
+    .recept_knoppen_divje{
+        padding: 0px 0px;
     }
 
     .flexbox-recept {
@@ -335,5 +364,10 @@ color: rgb(155, 163, 228) !important
 
     .flexbox-recept .box {
         flex: 1 0 100%;
+    }
+
+    .hide_on_big_screen {
+        display:block;
+        font-size: 20px;
     }
 }
