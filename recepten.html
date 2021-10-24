@@ -5,271 +5,241 @@
             Recepten
         </title>
         <link rel="stylesheet" href="stylesheet.css?v=1"> <!--aanpassen soms nodig want luie browser-->
-        <link rel="shortcut icon" type="image/jpg" href="favicon01.png"/>
+        <link rel="shortcut icon" type="image/jpg" href="food.png"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
 
     <!--Recepten toevoegen: pizza, hartige taart, salade-->
 
     <body style="background-color: rgba(248, 229, 211, 0.699)">
-        <div style='width: 100vw; max-height: 200px'>
-            <img style='width: 100vw; max-height: 300px' src="kitchen.jpg" alt="Keuken">
-        </div>
-        <center>
-            <h1 style= 'color: black; padding-top: 100px; margin-bottom: 5px'>Receptenboek</h1>
-            <h3 style= "color: black; margin-top: 5px">Klik op een knop om direct naar het recept te gaan</h3>
-            <a class = 'recept_knop' href = "#italiaanselasagne">
-                Italiaanse Lasagne
-            </a>
-            <a class = 'recept_knop' href = "#kiptraybake">
-                Kip traybake
-            </a>
-            <a class = 'recept_knop' href = "#salade">
-                Kip salade
-            </a>
+        <center class="header_recepten">
+            <div class= "divje_titelbalk_recepten">
+                <h1>Receptenboek</h1>
+                <h3 >Klik op een knop hieronder om direct naar het recept te gaan of scroll naar beneden om alle recepten te zien</h3>
+            </div>
+            <div class="recept_knoppen_divje">
+                <a class = 'recept_knop' href = "#italiaanselasagne">
+                    Italiaanse Lasagne
+                </a>
+                <a class = 'recept_knop' href = "#kiptraybake">
+                    Kip traybake
+                </a>
+                <a class = 'recept_knop' href = "#salade">
+                    Kip salade
+                </a>	
+                <p class='pijl'>&#5167;<br></p>
+            </div>
         </center>
         <div id='recepten_content'>
-            <h5 id= 'italiaanselasagne' style= 'color: black; margin-top: 0px'>Italiaanse Lasagne</h1>
-            <!-- <button type="button" class="collapsible">Italiaanse Lasagne</button> -->
+            <!--Italiaanse Lasgne-->
+            <h5 id= 'italiaanselasagne' style= 'color: black; margin-top: 0px'>Italiaanse Lasagne</h1>   
+            <div class="flexbox-recept">
+                <ul class="box">
 
-            <table class = "recepten_tabel" style= "color: black;">    
-                <!--Eerste RIJ-->
-                <!-- <tr class = "content"> -->
-                    <td style= "width: 40vw; padding-right: 20px">
-                        <p><b>Bolognesesaus</b></p>
-                        <li >
-                            Snipper de ui in een grote koekenpan met wat olijfolie en fruit het, halverwege de fijngesneden knoflook toevoegen
-                        </li>
-                        <li >
-                            Voeg eventueel de blokjes wortel en/of bleekselderij toe
-                        </li>
-                        <li >
-                            In de kleine braadpan de tomatenpuree hard verwarmen (blijf roeren, anders brandt ze aan), tot deze niet zurig meer ruikt. Het ui/knoflook/olie mengsel toevoegen
-                        </li>
-                        <li >
-                            In de grote koekenpan weer wat olijfolie verwarmen en het gehakt met de kruiden, zout en peper rul bakken. Toevoegen aan het tomatenpuree-mengsel, gepelde tomaten en gezeefde tomaten toevoegen en op smaak brengen met sambal, suiker en evt. nog wat kruiden en een laurierblaadje toevoegen
-                        </li>
-                        <li >
-                            Een half uur tot drie kwartier op laag vuur laten sudderen met deksel op de pan, af en toe roeren. Ondertussen de oven voorverwarmen op 180 graden Celsius
-                        </li>
-                        
-                        <p><b>Bechamelsaus</b></p>
-                        <li >
-                            Smelt de boter (niet bruin laten worden), bloem erdoor roeren en verwarmen (schrik niet; het wordt een soort klont, maar dat komt goed) 
-                        </li>
-                        <li >
-                            Daarna beetje bij beetje de koude melk met een garde erdoor roeren. Laten koken en blijven roeren tot je een dikke saus hebt. Op smaak brengen met zout en peper
-                        </li>
-                        <li >
-                            In een ingevette ovenschaal een laag lasagnevellen leggen. Vervolgens bedekken met 1/3 van de bechamelsaus, 1/3 van de bolognesesaus en 1 in plakjes gesneden bolletje mozzarella of 4 plakken kaas. Nu weer herhalen met een laag lasagnevellen, saus en kaas, vervolgens nog zo'n laag maar dan zonder kaas. Afdekken met aluminium-folie en in de oven schuiven, boven het midden
-                        </li>
-                        <li >
-                            Na 30 minuten het folie verwijderen en nog 15 minuten in de oven laten. Als het "knettert" is het klaar
-                        </li>  
-                    </td>
+                    <p><b>Bolognesesaus</b></p>
+                    <li >
+                        Snipper de ui in een grote koekenpan met wat olijfolie en fruit het, halverwege de fijngesneden knoflook toevoegen
+                    </li>
+                    <li >
+                        Voeg eventueel de blokjes wortel en/of bleekselderij toe
+                    </li>
+                    <li >
+                        In de kleine braadpan de tomatenpuree hard verwarmen (blijf roeren, anders brandt ze aan), tot deze niet zurig meer ruikt. Het ui/knoflook/olie mengsel toevoegen
+                    </li>
+                    <li >
+                        In de grote koekenpan weer wat olijfolie verwarmen en het gehakt met de kruiden, zout en peper rul bakken. Toevoegen aan het tomatenpuree-mengsel, gepelde tomaten en gezeefde tomaten toevoegen en op smaak brengen met sambal, suiker en evt. nog wat kruiden en een laurierblaadje toevoegen
+                    </li>
+                    <li >
+                        Een half uur tot drie kwartier op laag vuur laten sudderen met deksel op de pan, af en toe roeren. Ondertussen de oven voorverwarmen op 180 graden Celsius
+                    </li>
+                    
+                    <p><b>Bechamelsaus</b></p>
+                    <li >
+                        Smelt de boter (niet bruin laten worden), bloem erdoor roeren en verwarmen (schrik niet; het wordt een soort klont, maar dat komt goed) 
+                    </li>
+                    <li >
+                        Daarna beetje bij beetje de koude melk met een garde erdoor roeren. Laten koken en blijven roeren tot je een dikke saus hebt. Op smaak brengen met zout en peper
+                    </li>
+                    <li >
+                        In een ingevette ovenschaal een laag lasagnevellen leggen. Vervolgens bedekken met 1/3 van de bechamelsaus, 1/3 van de bolognesesaus en 1 in plakjes gesneden bolletje mozzarella of 4 plakken kaas. Nu weer herhalen met een laag lasagnevellen, saus en kaas, vervolgens nog zo'n laag maar dan zonder kaas. Afdekken met aluminium-folie en in de oven schuiven, boven het midden
+                    </li>
+                    <li >
+                        Na 30 minuten het folie verwijderen en nog 15 minuten in de oven laten. Als het "knettert" is het klaar
+                    </li>
+                </ul>
 
-                    <td style= "width: 20vw">
-                        <p><b>Bolognesesaus</b></p>
-                        <li >
-                            1 ui
-                        </li>
-                        <li >
-                            3 teentjes knoflook
-                        </li>
-                        <li >
-                            500 gram rundergehakt
-                        </li>
-                        <li >
-                            Italiaanse kruiden (zoals basilicum, oregano, peterselie, tijm, paprikapoeder)
-                        </li>
-                        <li >
-                            1 laurierblad
-                        </li>
-                        <li >
-                            1 groot blikje tomatenpuree
-                        </li>
-                        <li >
-                            1 blik gepelde tomaten in stukjes
-                        </li>
-                        <li >
-                            1 pakje gezeefde tomaten
-                        </li>
-                        <li >
-                            1 pak lasagnevellen
-                        </li>
-                        <li >
-                            2 bollen mozzarella
-                        </li>
-                        <li >
-                            Suiker, peper en zout
-                        </li>
-                        <p><b>Bechamelsaus</b></p>
-                        <li >
-                            50 gram roomboter
-                        </li>
-                        <li >
-                            50 gram bloem
-                        </li>
-                        <li >
-                            500 milliliter melk
-                        </li>
-                    </td>
-                        
-                    <td style= "width: 10vw">
-                        <div>
-                            <img class="recepten_foto" src="lasagne.jpg">
-                        </div>
-                    </td>
-            </table>    
+                <ul class="box">
+                    <p><b>Bolognesesaus</b></p>
+                    <li >
+                        1 ui
+                    </li>
+                    <li >
+                        3 teentjes knoflook
+                    </li>
+                    <li >
+                        500 gram rundergehakt
+                    </li>
+                    <li >
+                        Italiaanse kruiden (zoals basilicum, oregano, peterselie, tijm, paprikapoeder)
+                    </li>
+                    <li >
+                        1 laurierblad
+                    </li>
+                    <li >
+                        1 groot blikje tomatenpuree
+                    </li>
+                    <li >
+                        1 blik gepelde tomaten in stukjes
+                    </li>
+                    <li >
+                        1 pakje gezeefde tomaten
+                    </li>
+                    <li >
+                        1 pak lasagnevellen
+                    </li>
+                    <li >
+                        2 bollen mozzarella
+                    </li>
+                    <li >
+                        Suiker, peper en zout
+                    </li>
+                    <p><b>Bechamelsaus</b></p>
+                    <li >
+                        50 gram roomboter
+                    </li>
+                    <li >
+                        50 gram bloem
+                    </li>
+                    <li >
+                        500 milliliter melk
+                    </li>
+                </ul>
+
+                <div class="box">
+                    <img class="recepten_foto" src="lasagne.jpg">
+                </div>
+            </div>    
         </div> 
             <br>
             <br>
             <br>
             <br>
-            <div id='recepten_content2'>  
-                <table class = "recepten_tabel" style= "color: black">     
-                </tr>
-                <!--TWEEDE RIJ-->
-                <td style= "width: 40vw; padding-right: 20px; padding-top: 20px"> 
-                    <h5 id='kiptraybake' style= 'margin-top: 0px;'>Traybake met kip, broccoli en courgette</h1>
-                    <li >
-                        Verwarm de oven voor op 180 graden Celsius. Snijd de kipfilet in stukjes. Strooi er royaal kerriepoeder overheen en breng op smaak met zout en peper. Laat 10 minuten marineren
-                    </li>
-                    <li >
-                        Snijd ondertussen de ui in ringen, de knoflook in snippertjes, de broccoli in kleine roosjes en de courgette in plakken
-                    </li>
-                    <li >
-                        Vet de bakplaat van de oven in. Strooi de aardappelen eroverheen en voeg zout en peper toe. Verspreid de gesneden ui en gesnipperde knoflook eroverheen. Leg tenslotte de plajes courgette en broccoliroosjes bovenop
-                    </li>
-                    <li >
-                        Zet de ovenplaat <b>zonder de kip</b> in de oven. Laat ongeveer 45 minuten onder het midden van de oven garen
-                    </li>
-                    <li >
-                        Bak vijf minuten voor de schotel uit de oven gaat de kip in een hapjespan kort zodat die net gaar is. Haal de traybake uit de oven, verdeel over de borden en leg de gebakken kip erbovenop
-                    </li>
-                </td>
+            <div id='recepten_content2'>
 
-                <td style= "width: 20vw">
-                    <li >
-                        300 gram kipfilet
-                    </li>
-                    <li >
-                        1 courgette
-                    </li>
-                    <li >
-                        1 broccoli
-                    </li>
-                    <li >
-                        1 zakje bakaardappeltjes
-                    </li>
-                    <li >
-                        1 rode ui
-                    </li>
-                    <li >
-                        1 teentje knoflook
-                    </li>
-                    <li >
-                        Kerrie, tijm, zout en peper
-                    </li>
-                    
-                </td>
-                    
-                <td style= "width: 10vw">
-                    <div>
+                <h5 id= 'kiptraybake' style= 'color: black; margin-top: 0px'>Traybake met kip, broccoli en courgette</h1>   
+                <div class="flexbox-recept">
+                    <ul class="box">
+                        <li >
+                            Verwarm de oven voor op 180 graden Celsius. Snijd de kipfilet in stukjes. Strooi er royaal kerriepoeder overheen en breng op smaak met zout en peper. Laat 10 minuten marineren
+                        </li>
+                        <li >
+                            Snijd ondertussen de ui in ringen, de knoflook in snippertjes, de broccoli in kleine roosjes en de courgette in plakken
+                        </li>
+                        <li >
+                            Vet de bakplaat van de oven in. Strooi de aardappelen eroverheen en voeg zout en peper toe. Verspreid de gesneden ui en gesnipperde knoflook eroverheen. Leg tenslotte de plajes courgette en broccoliroosjes bovenop
+                        </li>
+                        <li >
+                            Zet de ovenplaat <b>zonder de kip</b> in de oven. Laat ongeveer 45 minuten onder het midden van de oven garen
+                        </li>
+                        <li >
+                            Bak vijf minuten voor de schotel uit de oven gaat de kip in een hapjespan kort zodat die net gaar is. Haal de traybake uit de oven, verdeel over de borden en leg de gebakken kip erbovenop
+                        </li>
+                    </ul>
+    
+                    <ul class="box">
+                        <li >
+                            300 gram kipfilet
+                        </li>
+                        <li >
+                            1 courgette
+                        </li>
+                        <li >
+                            1 broccoli
+                        </li>
+                        <li >
+                            1 zakje bakaardappeltjes
+                        </li>
+                        <li >
+                            1 rode ui
+                        </li>
+                        <li >
+                            1 teentje knoflook
+                        </li>
+                        <li >
+                            Kerrie, tijm, zout en peper
+                        </li>
+                    </ul>
+    
+                    <div class="box">
                         <img class="recepten_foto" src="kip.jpg">
                     </div>
-                </td>
-            </tr>
-            
-            </table>    
+                </div>    
         </div>
         <br>
         <br>
         <br>
         <br>
         <div id='recepten_content'>  
-            <table class = "recepten_tabel" style= "color: black">     
-            </tr>
-            <!--DERDE RIJ-->
-            <td id= 'salade' style= "width: 40vw; padding-right: 20px; padding-top: 20px"> 
-                <h5 style= 'margin-top: 0px;'>Kipsalade met geitenkaas en kerriesaus</h1>
-                <li >
-                    Verwarm de oven voor op 180 graden Celsius. Snijd de kipfilet in stukjes. Strooi er royaal kerriepoeder overheen en breng op smaak met zout en peper. Laat 10 minuten marineren
-                </li>
-                <li >
-                    Snijd ondertussen de ui in ringen, de knoflook in snippertjes, de broccoli in kleine roosjes en de courgette in plakken
-                </li>
-                <li >
-                    Vet de bakplaat van de oven in. Strooi de aardappelen eroverheen en voeg zout en peper toe. Verspreid de gesneden ui en gesnipperde knoflook eroverheen. Leg tenslotte de plajes courgette en broccoliroosjes bovenop
-                </li>
-                <li >
-                    Zet de ovenplaat <b>zonder de kip</b> in de oven. Laat ongeveer 45 minuten onder het midden van de oven garen
-                </li>
-                <li >
-                    Bak vijf minuten voor de schotel uit de oven gaat de kip in een hapjespan kort zodat die net gaar is. Haal de traybake uit de oven, verdeel over de borden en leg de gebakken kip erbovenop
-                </li>
-            </td>
+            <h5 id='salade' style= 'margin-top: 0px; color: black'>Kipsalade met geitenkaas en kerriesaus</h1>
+            <div class="flexbox-recept">
+                <ul class="box">
+                    <li >
+                        Snijd de komkommer, paprika en tomaat in plakjes en snipper de rode ui
+                    </li>
+                    <li >
+                        Verdeel de sla over de borden, leg daar de gesneden groenten en ui overheen. Maak kleine blokjes van de geitenkaas en voeg die toe
+                    </li>
+                    <li >
+                        Bestrooi de kipfilet met de tijm en bak in een paar minuten gaar
+                    </li>
+                    <li >
+                        Verdeel de kip over de salade en voeg kerriesaus naar smaak toe
+                    </li>
+                </ul>
 
-            <td style= "width: 20vw">
-                <li >
-                    300 gram gemengde salade
-                </li>
-                <li >
-                    300 gram kipfilet
-                </li>
-                <li >
-                    1 komkommer
-                </li>
-                <li >
-                    2 tomaten
-                </li>
-                <li >
-                    1 rode ui
-                </li>
-                <li >
-                    1 paprika
-                </li>
-                <li >
-                    1 blikje ananas
-                </li>
-                <li >
-                    1 stukje geitenkaas met honing
-                </li>
-                <li >
-                    Kerriesaus, zout en peper
-                </li>
-                <li >
-                    Optioneel: zakje rucola
-                </li>
-                
-            </td>
-                
-            <td style= "width: 10vw">
-                <div>
+                <ul class="box">
+                    <li >
+                        300 gram gemengde sla
+                    </li>
+                    <li >
+                        300 gram kipfilet
+                    </li>
+                    <li >
+                        1 komkommer
+                    </li>
+                    <li >
+                        2 tomaten
+                    </li>
+                    <li >
+                        1 rode ui
+                    </li>
+                    <li >
+                        1 paprika
+                    </li>
+                    <li >
+                        1 blikje ananas
+                    </li>
+                    <li >
+                        1 stukje geitenkaas met honing
+                    </li>
+                    <li >
+                        1 potje kerriesaus
+                    </li>
+                    <li >
+                        (gedroogde) tijm
+                    </li>
+                    <li >
+                        Zout en peper
+                    </li>
+                    <li >
+                        Optioneel: zakje rucola
+                    </li>
+                </ul>
+
+                <div class="box">
                     <img class="recepten_foto" src="geit.jpg">
+
                 </div>
-            </td>
-        </tr>
-        
-        </table>    
+            </div>   
     </div>
-
-        <!-- <script>
-            var coll = document.getElementsByClassName("collapsible");
-            var i;
-            
-            for (i = 0; i < coll.length; i++) {
-              coll[i].addEventListener("click", function() {
-                this.classList.toggle("active");
-                var content = this.nextElementSibling;
-                if (content.style.display === "block") {
-                  content.style.display = "none";
-                } else {
-                  content.style.display = "block";
-                }
-              });
-            }
-            </script> -->
-
-
     </body>

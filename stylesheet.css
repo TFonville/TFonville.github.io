@@ -152,10 +152,13 @@ color: rgb(155, 163, 228) !important
 }
 
 #recepten_content2{
+    margin-left: 15%;
+    margin-block: unset;
+    width: 85%;
+    box-sizing: border-box;
+    
     padding: 20px 40px;
     margin-top: 0px;
-    margin-left: 100px;
-    width: calc(85vw);
     /* border-bottom: solid 1px rgba(0, 0, 0, 0.8); */
     border-left:solid 4px rgb(50, 50, 51)
 }
@@ -173,36 +176,69 @@ color: rgb(155, 163, 228) !important
 }
 
 .recept_knop{
-    background-color: rgb(90, 89, 99);
+    background-color: rgba(90, 89, 99, 0.1);
     color:white;
     border-radius: 8px;
-    padding: 6px 12px;
+    padding: 9px 20px;
     margin: 10px;
+    font-size: 18px;
+    border: solid 1.5px rgb(218, 214, 2);
+    backdrop-filter: blur(4px);
+    display: inline-block;
 }
 
-/*bron: https://www.w3schools.com/howto/howto_js_collapsible.asp*/
-.collapsible {
-    background-color: #777;
-    color: white;
-    cursor: pointer;
-    padding: 18px;
+.header_recepten{
+    background-image: url("kitchen_big.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: rgb(255, 255, 255);
+}
+
+.header_recepten h1{  
+    margin-bottom: 5px; 
+    margin-block: unset;
+}
+
+.divje_titelbalk_recepten{ 
+    padding: 10px; 
+    background-color: rgba(211, 211, 211, 0.25); 
+    border-right: solid 10px rgb(218, 214, 2);
+    border-left: solid 10px rgb(218, 214, 2);
+    backdrop-filter: blur(8px);
+    position:absolute;
+    top: 27vh;
+    left: 15%;
+    right: 15%;
+}
+
+.recept_knoppen_divje{
+    position:absolute;
+    bottom:2vh;
     width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 15px;
-  }
-  
-  .active, .collapsible:hover {
-    background-color: #555;
-  }
-  
-  .content {
-    padding: 0 18px;
-    display: none;
-    overflow: hidden;
-    background-color: #f1f1f1;
-  }
+    font-weight: bold;
+}
+
+.flexbox-recept {
+    color: black;
+    display: flex;
+}
+.flexbox-recept .box {
+    flex: 1 1 100%;
+}
+.flexbox-recept .box:nth-child(2) {
+    flex: 1 1 50%;
+}
+.flexbox-recept .box:nth-child(3) {
+    flex: 1 1 30%;
+}
+
+.pijl{
+    color:rgb(218, 214, 2);
+    font-size: 50px;
+    margin: 0px;
+    margin-top: 20px;
+}
 
 /* Use a media query to add a breakpoint at 800px: */
 @media screen and (max-width: 800px) {
@@ -226,6 +262,13 @@ color: rgb(155, 163, 228) !important
         display:inline-block;
         font-size: 17px;
     }
+
+    .recept_knop {
+        margin-top: 10px;
+        display:inline-block;
+        font-size: 17px;
+    }
+
     h3 {
         font-size: 15px;
     }
@@ -244,6 +287,7 @@ color: rgb(155, 163, 228) !important
     h1 {
         font-size: 25px;
         margin: 10px;
+        padding-top: 0px;
     }
     #Theo_foto {
         height: 100px;
@@ -258,13 +302,38 @@ color: rgb(155, 163, 228) !important
         width: 100%;
         background-color: rgb(255, 255, 255);
         border-right:solid 4px rgb(216, 216, 2); 
-        color: black;
-    
+        color: black;    
     }
+
+    #recepten_content, #recepten_content2{
+        padding: 34px;
+        box-sizing: border-box;
+        margin-bottom:100px;
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+        color: black;
+        border-left:solid 4px rgb(50, 50, 51)
+    }
+
     .Jaartal-CV{
         display:none;
     }
     .CV{
         width: 100% !important;
+    }
+
+    .divje_titelbalk_recepten{
+        left: 0%;
+        right: 0%; 
+    }
+
+    .flexbox-recept {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+
+    .flexbox-recept .box {
+        flex: 1 0 100%;
     }
 }
