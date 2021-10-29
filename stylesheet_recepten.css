@@ -1,0 +1,188 @@
+
+body {
+    background: rgba(248, 229, 211, 0.699);
+    color: black;
+}
+
+h5 {
+    font-size: 20px;
+    margin-bottom:0px;
+}
+
+#recepten_content{
+    padding: 20px 40px;
+    margin-top: 0px;
+    width: calc(85vw);
+    /* border-bottom: solid 1px rgba(0, 0, 0, 0.8); */
+    border-right:solid 4px rgb(50, 50, 51)
+}
+
+#recepten_content2{
+    margin-left: 11%;
+    margin-block: unset;
+    width: 85%;
+    box-sizing: border-box;
+    padding: 20px 40px;
+    margin-top: 0px;
+    /* border-bottom: solid 1px rgba(0, 0, 0, 0.8); */
+    border-left:solid 4px rgb(50, 50, 51)
+}
+
+.recepten_tabel li {
+    text-indent: -22px;
+    padding-left: 22px;
+}
+
+.recepten_foto{
+    /* height: 80px; */
+    width: 25vw;
+    border-radius: 0px;
+    padding-left: 15px;
+}
+
+.recept_knop{
+    background-color: rgba(90, 89, 99, 0.1);
+    color:white;
+    border-radius: 8px;
+    padding: 9px 20px;
+    margin: 10px;
+    font-size: 18px;
+    border: solid 1.5px rgb(218, 214, 2);
+    backdrop-filter: blur(4px);
+    display: inline-block;
+}
+
+.header_recepten{
+    background-image: url("kitchen_big.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: rgb(255, 255, 255);
+}
+
+.header_recepten h1{  
+    margin-bottom: 5px; 
+    margin-block: unset;
+}
+
+.divje_titelbalk_recepten{ 
+    padding: 10px; 
+    background-color: rgba(211, 211, 211, 0.25); 
+    border-right: solid 10px rgb(218, 214, 2);
+    border-left: solid 10px rgb(218, 214, 2);
+    backdrop-filter: blur(8px);
+    position:absolute;
+    top: 27vh;
+    left: 15%;
+    right: 15%;
+}
+
+.recept_knoppen_divje{
+    position:absolute;
+    bottom:1vh;
+    width: 100%;
+    font-weight: bold;
+    padding: 0px 20%;
+    box-sizing: border-box;
+}
+
+.flexbox-recept {
+    color: black;
+    display: flex;
+}
+.flexbox-recept .box {
+    flex: 1 1 100%;
+}
+.flexbox-recept .box:nth-child(2) {
+    flex: 1 1 50%;
+}
+.flexbox-recept .box:nth-child(3) {
+    flex: 1 1 30%;
+}
+
+.pijl{
+    color:rgb(218, 214, 2);
+    font-size: 50px;
+    margin: 0px;
+    margin-top: 0px;
+    animation:pijl_animatie 1.5s 3;
+    transform:translate(0, -15px)
+}
+
+.hide_on_big_screen {
+    display:none;
+}
+
+@keyframes pijl_animatie {
+    0% {
+        transform:translate(0, -15px)
+    }
+    70% {
+        transform:translate(0, 10px)
+    }
+    100% {
+        transform:translate(0, -15px)
+    }
+    
+}
+
+#breaks_remove_on_mobile{
+    display:block;
+}
+
+/* Use a media query to add a breakpoint at 800px: */
+@media screen and (max-width: 800px) {
+    #recepten_content, #recepten_content2{
+        padding: 0px 34px;
+        box-sizing: border-box;
+        margin-bottom:30px;
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+        color: black;
+    }
+    .divje_titelbalk_recepten{
+        left: 0%;
+        right: 0%; 
+        top: 25vh;
+    }
+
+    .recept_knop{
+        font-size: 15px;
+        padding: 5px;
+    }
+
+    .recept_knoppen_divje{
+        padding: 0px 0px;
+    }
+
+    .flexbox-recept {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+
+    .flexbox-recept .box {
+        flex: 1 0 100%;
+        padding: 0px;
+    }
+
+    .hide_on_big_screen {
+        display:block;
+        font-size: 20px;
+    }
+    
+    #breaks_remove_on_mobile{
+        display:none;
+    }
+
+    .recepten_foto{
+        min-width: 80vw;
+        padding-left: 0px;
+    }
+    .box{
+        margin: 0px;
+    }
+    h5{
+        margin-bottom:15px;
+    }
+}
