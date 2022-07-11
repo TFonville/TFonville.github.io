@@ -146,13 +146,17 @@ color: rgb(155, 163, 228) !important
 /* Use a media query to add a breakpoint at 800px: */
 @media screen and (max-width: 800px) {
 
+    .hide_on_mobile{
+        display: none;
+    }
+
     #achtergrondvideo{
         max-width:10000%;
         min-height:100%;
         left:-700px;
     }
     #pagecontent{
-        padding: 20px 25px;
+        padding: 20px 34px;
         margin-top: 60px;
         width: 80vw;
     }
@@ -174,6 +178,7 @@ color: rgb(155, 163, 228) !important
 
     h3 {
         font-size: 15px;
+        padding-left: 10%;
     }
     .youtubefilmpje{
         width: 90%;
