@@ -107,7 +107,15 @@ color: rgb(155, 163, 228) !important
     z-index: -100;
 }
 
-#pagecontent{
+#pagecontent_index{
+    padding: 40px 150px;
+    margin-top: 150px;
+    width: calc(100vw - 400px);
+    background-color: rgba(36, 35, 35, 0.8);
+    border-right:solid 4px rgb(216, 216, 2)
+}
+
+#pagecontent_CV{
     padding: 40px 150px;
     margin-top: 150px;
     width: calc(100vw - 400px);
@@ -146,20 +154,28 @@ color: rgb(155, 163, 228) !important
 /* Use a media query to add a breakpoint at 800px: */
 @media screen and (max-width: 800px) {
 
-    .hide_on_mobile{
+    /*NOG FIXEN: filmpje mag niet op achtergrond downloaden in mobiele versie!*/
+    /* .hide_on_mobile{
         display: none;
-    }
+    } */
 
     #achtergrondvideo{
         max-width:10000%;
         min-height:100%;
         left:-700px;
     }
-    #pagecontent{
+    #pagecontent_index{
         padding: 20px 34px;
         margin-top: 60px;
-        width: 80vw;
+        width: 82vw;
     }
+
+    #pagecontent_CV{
+        padding: 20px 34px;
+        margin-top: 60px;
+        max-width: 85vw;
+    }
+
     h2 {
         font-size: 30px;
         margin: 5px;
@@ -206,7 +222,7 @@ color: rgb(155, 163, 228) !important
         margin-bottom:100px;
         margin-left: 0;
         margin-right: 0;
-        width: 100%;
+        width: 85%;
         background-color: rgb(255, 255, 255);
         border-right:solid 4px rgb(216, 216, 2); 
         color: black;    
@@ -217,5 +233,12 @@ color: rgb(155, 163, 228) !important
     }
     .CV{
         width: 100% !important;
+    }
+
+    .streepje-in-rij{
+        background-color: rgb(65, 64, 64);
+        height: 1px;
+        border-right:none;
+        border-left: none;
     }
 }
